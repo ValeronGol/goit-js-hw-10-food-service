@@ -8,7 +8,7 @@ const body = document.querySelector('body');
 
 function currentTheme() {
   if (localStorage.theme === 'true') {
-    body.classList.add(Theme.LIGHT, Theme.DARK);
+    body.classList.add(Theme.DARK);
     themeSwitchToggle.checked = true;
   }
 }
