@@ -1,6 +1,1 @@
-
-
-- Создан репозиторий `goit-js-hw-10-food-service`.
-
-
-
+Создан репозиторий `goit-js-hw-10-food-service`.

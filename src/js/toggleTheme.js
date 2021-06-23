@@ -6,19 +6,18 @@ const Theme = {
 const themeSwitchToggle = document.querySelector('#theme-switch-toggle');
 const body = document.querySelector('body');
 
-if (localStorage.theme === 'true') {
+function currentTheme() {
+  if (localStorage.theme === 'true') {
     body.classList.add(Theme.LIGHT, Theme.DARK);
-    themeSwitchToggle.checked = true
-
-} else {
-    localStorage.setItem('theme', false);
-    body.classList.add(Theme.LIGHT)
+    themeSwitchToggle.checked = true;
+  }
 }
 
 themeSwitchToggle.addEventListener('change', themeControl);
 
 function themeControl(ev) {
-localStorage.setItem('theme', ev.target.checked)
+  localStorage.setItem('theme', ev.target.checked);
 
-body.classList.toggle(Theme.DARK);
-};
+  body.classList.toggle(Theme.DARK);
+}
+currentTheme();

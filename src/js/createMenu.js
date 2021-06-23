@@ -1,4 +1,4 @@
-import menu from '../menu.json';
+import menu from './menu.json';
 import menuTemplate from '../templates/menu.hbs';
 
 const menuConteiner = document.querySelector('.js-menu');
