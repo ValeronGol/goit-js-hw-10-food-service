@@ -12,6 +12,8 @@ function currentTheme() {
   if (localStorage.getItem('theme') === 'dark-theme') {
     body.classList.add(Theme.DARK);
     themeSwitchToggle.checked = true;
+  } else {
+    body.classList.add(Theme.LIGHT);
   }
 }
 
